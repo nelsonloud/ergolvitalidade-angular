@@ -1,0 +1,14 @@
+<section id="team" class="mb-5" class="caixa">
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">Equipa</h1>
+    </div>
+    <div class="container text-center">
+       <div class="row" >
+            @for (professional of professionals; track professional.id) {
+                <div class="col mt-5">
+                  <app-cards (professionalSelected)="onProfessionalSelected($event)" [professionals]="professional" />
+                </div>
+            }
+        </div>
+    </div>
+</section>

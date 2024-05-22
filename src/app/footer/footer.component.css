@@ -1,0 +1,9 @@
+footer p a {
+	margin: 5px 15px;
+}
+
+footer {
+    background-color: #B4DC78;
+    padding: 20px;
+    height: 100%;
+}

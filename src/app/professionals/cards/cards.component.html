@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+    @if(professionals.imageUrl) {
+        <img [src]="professionals.imageUrl" class="card-img-top" alt="profile picture">
+    } @else {
+        <img src="assets/img/non-profile.png" class="card-img-top" alt="profile picture">
+    }
+    
+    <div class="card-body">
+      <h5 class="card-title">{{ professionals.name_profession }}</h5>
+      <p class="card-text">{{ professionals.description }}</p>
+      <a href="#" class="btn btn-primary" (click)="onProfessionalViewed()">Go somewhere</a>
+    </div>
+  </div>
